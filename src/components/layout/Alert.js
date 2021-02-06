@@ -12,7 +12,6 @@ const Alert = ({ alert }) => {
 
                 <i className='fas fa-into-circle' />{alert.msg}
             </div>
-
         )
     )
 }

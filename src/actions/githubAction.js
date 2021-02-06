@@ -23,7 +23,7 @@ if (process.env.NODE_ENV !== 'production') {
 export const searchUsers = (text) => async dispatch => {
     setLoading()
     const res = await axios.get(`https://api.github.com/search/users?q=${text}&client_id=${githubClientId}& client_secret=${githubClientSecret}`)
-
+    console.log(typeof (res.data.items))
     dispatch({
         type: SEARCH_USERS,
         payload: res.data.items
