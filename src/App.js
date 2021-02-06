@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import './App.css';
+import './App.css'
 import Navbar from './components/layout/Navbar'
 import Alert from './components/layout/Alert'
 import About from './components/pages/About'
@@ -9,7 +9,7 @@ import Home from './components/pages/Home'
 import NotFound from './components/pages/NotFound'
 
 import { Provider } from 'react-redux'
-import store from './store'
+import store from './store/configStore'
 
 const App = () => {
   return (
@@ -29,8 +29,7 @@ const App = () => {
         </div>
       </Router>
     </Provider>
-  );
-
+  )
 }
 
-export default App;
+export default App
